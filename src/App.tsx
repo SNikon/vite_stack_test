@@ -1,15 +1,8 @@
-import React, { createElement, useEffect } from 'react'
-import { render, WasmReact, Sample } from 'plot-test'
+import React from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
-WasmReact.useReact(React);
-
 function App() {
-  useEffect(() => {
-    render('rust_target')
-  }, [])
-
   return (
     <div className="App">
       <div>
@@ -21,8 +14,6 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <Sample count={10} label="Rust Component" description="dumb" />
-      <div className="card" id="rust_target" />
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
